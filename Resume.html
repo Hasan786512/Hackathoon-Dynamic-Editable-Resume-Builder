@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="Resume.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="profile.jpg" alt="Profile Picture" class="profile-img">
+            <h1>Hassan Raza</h1>
+            <p>Web Developer | UI/UX Enthusiast | Passionate About Learning</p>
+        </header>
+
+        <main id="main-content">
+            <h2>Build Your Resume</h2>
+            <section class="form-section">
+                <label>
+                    <input type="checkbox" id="toggle-name"> Add Name
+                </label>
+                <div id="name-fields" class="field-container">
+                    <input type="text" id="name-input" placeholder="Enter Your Name">
+                </div>
+            </section>
+
+            <section class="form-section">
+                <label>
+                    <input type="checkbox" id="toggle-contact"> Add Contact Number
+                </label>
+                <div id="contact-fields" class="field-container">
+                    <input type="tel" id="contact-input" placeholder="Enter Contact Number">
+                </div>
+            </section>
+
+            <section class="form-section">
+                <label>
+                    <input type="checkbox" id="toggle-email"> Add Email
+                </label>
+                <div id="email-fields" class="field-container">
+                    <input type="email" id="email-input" placeholder="Enter Email Address">
+                </div>
+            </section>
+
+            <section class="form-section">
+                <label>
+                    <input type="checkbox" id="toggle-education"> Add Education
+                </label>
+                <div id="education-fields" class="field-container">
+                    <input type="text" id="education-input" placeholder="Enter Education Details">
+                </div>
+            </section>
+
+            <section class="form-section">
+                <label>
+                    <input type="checkbox" id="toggle-skills"> Add Skills
+                </label>
+                <div id="skills-fields" class="field-container">
+                    <textarea id="skills-input" rows="3" placeholder="Enter Your Skills (e.g., JavaScript, React)"></textarea>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <label>
+                    <input type="checkbox" id="toggle-hobbies"> Add Hobbies
+                </label>
+                <div id="hobbies-fields" class="field-container">
+                    <textarea id="hobbies-input" rows="3" placeholder="Enter Your Hobbies (e.g., Reading, Travelling)"></textarea>
+                </div>
+            </section>
+
+            <section class="form-section">
+                <label>
+                    <input type="checkbox" id="toggle-experience"> Add Experience
+                </label>
+                <div id="experience-fields" class="field-container">
+                    <textarea id="experience-input" rows="3" placeholder="Enter Your Work Experience"></textarea>
+                </div>
+            </section>
+
+            <button id="submit-btn">Submit</button>
+        </main>
+    </div>
+    <script src="Resume.js"></script>
+</body>
+</html>
